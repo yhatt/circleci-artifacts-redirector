@@ -1,0 +1,28 @@
+{
+  "name": "circleci-artifacts-redirector",
+  "version": "0.0.0",
+  "author": {
+    "name": "Yuki Hattori",
+    "url": "https://github.com/yhatt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yhatt/circleci-artifacts-redirector"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --quiet --cache --cache-location ./tmp",
+    "lint:all": "eslint --quiet --cache --cache-location ./tmp .",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "sync-request": "^4.1.0",
+    "url-join": "^2.0.2"
+  }
+}
