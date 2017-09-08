@@ -4,9 +4,19 @@ Path resolver and redirect server of [CircleCI](https://circleci.com/)'s [build 
 
 ## Getting started
 
+### With [docker]()
+
+With this command, the redirect server will be listening on port 8080:
+
+```bash
+$ docker run -d -p 8080:80 yhatt/circleci-artifacts-redirector
+```
+
 ### Run express server
 
 ```bash
+$ git clone https://github.com/yhatt/circleci-artifacts-redirector.git
+
 $ npm install
 $ npm start
 ```
@@ -39,7 +49,7 @@ http://localhost:8080/?path=artifact.html&user=yhatt&project=circleci-artifacts-
 
 ### Environments
 
-- `APP_PORT`: Listening port of express server (`8080` by default)
+- `CIRCLECI_ARTIFACTS_REDIRECTOR_PORT`: Listening port of express server (`8080` by default with running locally)
 
 ### [direnv](http://direnv.net/) support
 
