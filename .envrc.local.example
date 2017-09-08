@@ -1,2 +1,2 @@
 # Application setting
-export APP_PORT=8080
+export CIRCLECI_ARTIFACTS_REDIRECTOR_PORT=8080

@@ -4,7 +4,7 @@ const urlJoin = require('url-join')
 
 const app = express()
 const env = {
-  port: process.env.APP_PORT || 8080,
+  port: process.env.CIRCLECI_ARTIFACTS_REDIRECTOR_PORT || 8080,
 }
 
 app.get('/', (req, res) => {
